@@ -13,6 +13,9 @@
         </div>
     <% } %>
     <!-- paginator  -->
+    <% if (page.mathjax == true){ %>
+    	<%- partial('mathjax') %>
+    <% } %>
     <ul class="post-paginator">
         <li class="next">
             <% if (page.prev){ %>
